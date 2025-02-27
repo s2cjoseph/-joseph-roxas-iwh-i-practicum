@@ -1,0 +1,19 @@
+html
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Update Book Record
+        form(action="/update-cobj" method="POST")
+            div
+                label(for="name") Name
+                input(type="text" id="name" name="name" required)
+            div
+                label(for="author") Author
+                input(type="text" id="author" name="author" required)
+            div
+                label(for="genre") Genre
+                input(type="text" id="genre" name="genre" required)
+            div
+            button(type="submit") Submit
