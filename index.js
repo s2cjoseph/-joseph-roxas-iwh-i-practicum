@@ -28,7 +28,12 @@ app.get('/', async (req, res) => {
         console.error(error);
     }
 });
+// TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
 
+// * Code for Route 2 goes here
+app.get('/update-cobj', async (req, res) => {
+    res.render('updates', { title: 'Update Books | HubSpot APIs' });
+});
 
 // * Localhost
 app.listen(3000, () => console.log('Listening on http://localhost:3000'));
